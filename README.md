@@ -1,15 +1,32 @@
-# Portfolio
+# James Moran - Portfolio
 
-text text text...
+My personal portfolio: a **universal / isomorphic rendering** application in React and Redux.
 
-<p>code code code...</p>
+[Link](http://www.google.com)
 
-1. one
-2. two
-3. three
+Some technologies utilized here include:
+* React
+* React Router
+* Flux
+* Node
+* Webpack
+* Babel 6 / ES6
+* Eslint
+* SASS
 
-* one
-* two
-* three
+## Development Installation
 
-[google](google.com)
+In the project's directory, run the following commands:
+
+```
+$ npm install
+$ npm run dev
+```
+
+This will leverage webpack-dev-server and enable hot module reloading.
+
+Then  Visit
+
+```
+http://localhost:3000
+```
