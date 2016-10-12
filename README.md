@@ -29,5 +29,5 @@ This will leverage webpack-dev-server and enable hot module reloading.
 Then  Visit
 
 ```
-http://localhost:3000
+http://localhost:8080
 ```
