@@ -1,6 +1,6 @@
 # James Moran - Portfolio
 
-My personal portfolio: a **universal / isomorphic rendering** application in React and Redux.
+My personal portfolio created with React.
 
 [Link](http://www.google.com)
 
@@ -13,6 +13,7 @@ Some technologies utilized here include:
 * Babel 6 / ES6
 * Eslint
 * SASS
+
 
 ## Development Installation
 
