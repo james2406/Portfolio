@@ -10,7 +10,7 @@ Some technologies utilized here include:
 * Flux
 * Node
 * Webpack
-* Babel 6 / ES6
+* Babel 6 / ES2015
 * Eslint
 * SASS
 
