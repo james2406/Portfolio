@@ -1,0 +1,16 @@
+.header {
+    height: 100vh;
+}
+
+.header > h4 {
+    padding: 0 20px;
+    padding-top: 40vh;
+    line-height: 140%;
+    @include respond-to('small') {
+        padding: 0;
+        margin-right: 10%;
+        margin-left: 40%;
+        padding-top: 40vh;
+        padding-bottom: 30vh;
+    }
+}

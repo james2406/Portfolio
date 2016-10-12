@@ -1,0 +1,44 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    @include respond-to('small') {
+        position: absolute;
+        flex-direction: row;
+        top: 100px;
+        background-color: transparent;
+    }
+}
+
+nav > div.logo,
+nav > .navigation_links {
+    padding: 20px;
+    @include respond-to('small') {
+        padding: 0;
+    }
+}
+
+nav div.logo {
+    @include respond-to('small') {
+        width: 30%;
+        margin-left: 10%;
+    }
+}
+
+nav div.logo p {
+    font-weight: bold;
+}
+
+nav .navigation_links {
+    @include respond-to('small') {
+        background-color: transparent;
+    }
+}
+
+nav .navigation_links > a {
+    margin-right: 30px;
+    @include respond-to('small') {
+        margin-right: 50px;
+    }
+}
