@@ -20,18 +20,22 @@ Technologies used in this project include:
 If you would like to run this project:
 
 <ol>
-1. Navigate to the project's directory
+  <li>
+    1. Navigate to the project's directory
+  </li>
+  <li> 
+    2. run these commands
 
-2. run these commands
+    ```
+    $ npm install
+    $ npm run dev
+    ```
+  </li>
+  <li>
+    3. Visit
 
-```
-$ npm install
-$ npm run dev
-```
-
-3. Visit
-
-```
-http://localhost:8080
-```
+    ```
+    http://localhost:8080
+    ```
+  </li>
 </ol>
