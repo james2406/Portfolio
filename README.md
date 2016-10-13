@@ -23,13 +23,13 @@ If you would like to run this project:
 
 2. run these commands
 
-```
-$ npm install
-$ npm run dev
-```
+  ```
+  $ npm install
+  $ npm run dev
+  ```
 
 3. Visit
 
-```
-http://localhost:8080
-```
+  ```
+  http://localhost:8080
+  ```
