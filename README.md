@@ -17,17 +17,17 @@ Technologies used in this project include:
 
 ## Development Installation
 
-1. Navigate to the project's directory
+Navigate to the project's directory
 
-2. run these commands
+Run these commands
 
-  ```
-  $ npm install
-  $ npm run dev
-  ```
+```
+$ npm install
+$ npm run dev
+```
 
-3. Visit
+Visit
 
-  ```
-  http://localhost:8080
-  ```
+```
+http://localhost:8080
+```
