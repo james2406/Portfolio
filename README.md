@@ -19,6 +19,7 @@ Technologies used in this project include:
 
 If you would like to run this project:
 
+<ol>
 1. Navigate to the project's directory
 
 2. run these commands
@@ -33,3 +34,4 @@ $ npm run dev
 ```
 http://localhost:8080
 ```
+</ol>
