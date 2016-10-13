@@ -1,10 +1,10 @@
 # James Moran - Portfolio
 
-My personal portfolio created with React.
+My personal portfolio created with React
 
-[Link](http://www.google.com)
+[Link](https://james2406.github.io/Portfolio/src/)
 
-Some technologies utilized here include:
+Technologies used in this project include:
 * React
 * React Router
 * Flux
@@ -17,14 +17,12 @@ Some technologies utilized here include:
 
 ## Development Installation
 
-In the project's directory, run the following commands:
+In the project's directory, run these commands
 
 ```
 $ npm install
 $ npm run dev
 ```
-
-This will leverage webpack-dev-server and enable hot module reloading.
 
 Then  Visit
 
