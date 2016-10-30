@@ -18,6 +18,7 @@ ReactDOM.render(
       		<Route path="project" component={ ProjectPage }></Route>
       		<Route path="about" component={ AboutPage }></Route>
       		<Route path="contact" component={ ContactPage }></Route>
+      		<Route path="project" component={ ProjectPage }></Route>
     	</Route>
   	</Router>,
 app);

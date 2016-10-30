@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
         this.state = {
             projects: [{
                 id: 1,
-                title: "gohire",
+                title: "GoHire",
                 subtitle: "Lorem ipsum dolor sit amet",
                 text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod molestie leo, in placerat quam. Proin a scelerisque dui, vel tincidunt sapien. Donec quis consectetur leo, a vestibulum diam. Phasellus ligula quam, vestibulum eu sapien a, fringilla euismod ante",
                 imgUrl: "http://i.imgur.com/u62xdzy.png",
@@ -28,7 +28,7 @@ export default class Projects extends React.Component {
                 }]
             }, {
                 id: 2,
-                title: "Taxi app",
+                title: "Projection Mapping prototype",
                 subtitle: "Lorem ipsum dolor sit amet",
                 text: "Nullam ante tellus, laoreet ut tellus id, blandit rhoncus massa. Vestibulum finibus pretium lorem quis condimentum. Nulla tincidunt vehicula arcu vel malesuada. Mauris ipsum dui, elementum fringilla orci vel, blandit accumsan mi",
                 imgUrl: "https://think360studio.com/wp-content/uploads/2015/07/web-design-trends-predition-2016-3.png",
