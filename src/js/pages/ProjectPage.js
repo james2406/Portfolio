@@ -7,12 +7,17 @@ export default class ProjectPage extends React.Component {
     constructor(){
         super();
         this.state = {
-        	project: ProjectStore.getProject(1)
+        	project: {}
         };
     }
 
+    componentWillMount() {
+    	var projectId = parseInt(this.props.params.projectId);
+    	this.setState({ project: ProjectStore.getProject(projectId) });
+  	}
+
     render() {
-        const project = this.state.project;
+    	const project = this.state.project;
 
         return (
         	<p class="">{ project.title }</p>
