@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from 'react-router';
 
+import ProjectStore from "../stores/ProjectStore";
+
 export default class ProjectPage extends React.Component {
     constructor(){
         super();
-        this.state = {};
+        this.state = {
+        	project: ProjectStore.getProject(1)
+        };
     }
 
     render() {
+        const project = this.state.project;
+
         return (
-        	<div id="project"></div>
+        	<p class="">{ project.title }</p>
         );
     }
 }

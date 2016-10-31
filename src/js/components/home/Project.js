@@ -1,33 +1,11 @@
 import React from "react";
 
-import { hashHistory } from 'react-router'
-
-var Scroll = require('react-scroll');
-var scroll = Scroll.animateScroll;
-
 export default class Project extends React.Component {
     constructor(){
         super();
         this.state = {
             active: "",
         };
-    }
-    returnPos(el){
-        const elPos = el.getBoundingClientRect().top;
-        const pageYOffset = window.pageYOffset;
-        return (elPos + pageYOffset);
-    }
-    scrollTo(el){
-        scroll.scrollTo(
-            this.returnPos(el)
-        );
-    }
-    handleClick(){
-        this.setState({active: "active"});
-        this.scrollTo(document.getElementById('projects'));
-        setTimeout(() => {
-            // hashHistory.push('/project');
-        }, 1000); 
     }
 
     render() {
