@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router';
 
 export default class Project extends React.Component {
     constructor(){
@@ -12,7 +13,7 @@ export default class Project extends React.Component {
         const id = this.props.id;
     	const title = this.props.title;
         const text = this.props.text;
-        const imgUrl = this.props.imgUrl;
+        const imgUrl = this.props.imgUrl[0];
     	const skills = this.props.skills.map((skill) => {
             return <p key={skill.id}>{skill.skill}</p>;
         });
@@ -24,7 +25,9 @@ export default class Project extends React.Component {
                     <div class="project_skills">{ skills }</div>
                     <img class="project_image" src={imgUrl}></img>
                     <p class="project_text">{ text }</p>
-                    <button class="btn_white">View project</button>
+                    <Link to={ 'project/' + id }>
+                        <button class="btn_white">View project</button>
+                    </Link>
                 </div>
                 <div class="project_right">
                     <div class="project_image" style={{background: 'url("' + imgUrl + '") left top / cover'}}></div>

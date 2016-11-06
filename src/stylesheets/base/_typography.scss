@@ -9,11 +9,18 @@ html {
 
 /* Copy & Lists */
 
-p {}
+p {
+    line-height: 1.5;
+    color: #333;
+}
 
 a {
-	text-decoration: none;
-    color: black;
+    text-decoration: none;
+    color: #4078c0;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul,
@@ -37,7 +44,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+    color: #333;
+}
 
 h1 {
     font-size: 4rem;

@@ -1,5 +1,7 @@
 import React from "react";
 
+import Nav from "../components/layout/Nav";
+
 export default class ContactPage extends React.Component {
     constructor(){
         super();
@@ -12,6 +14,8 @@ export default class ContactPage extends React.Component {
     render() {
         return (
         	<div id="contact">
+                <Nav />
+
         		<h1>Contact</h1>
 
                 <div class=""></div>

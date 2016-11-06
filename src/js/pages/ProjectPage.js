@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from 'react-router';
 
+import Nav from "../components/layout/Nav";
 import ProjectStore from "../stores/ProjectStore";
+import Section from "../components/project/Section";
 
 export default class ProjectPage extends React.Component {
     constructor(){
@@ -25,26 +27,37 @@ export default class ProjectPage extends React.Component {
 
     	const title = project.title;
         const text = project.text;
-        const imgUrl = project.imgUrl;
-    	const skills = project.skills.map((skill) => {
-            return <p key={skill.id}>{skill.skill}</p>;
+
+        const images = project.imgUrl.map((imgUrl, rank) => {
+            return <img key={rank} class="project_image" src={ imgUrl }></img>;
         });
-        // const sections = sections.map((section) => {
-        //     return <Section key={project.id} {...project} />;
-        // });
+    	const skills = project.skills.map((skill, rank) => {
+            return <p key={rank}>{skill.skill}</p>;
+        });
+        const Sections = project.sections.map((section, rank) => {
+            return <Section key={rank} {...section} />;
+        });
 
         return (
         	<div id="project">
+                <Nav />
+
         		<div class="project_header">
-	        		<h3 class="project_title">{ title }</h3>
-	                <div class="project_skills">{ skills }</div>
-	                <img class="project_image" src={imgUrl}></img>
+                    <div class="container">
+    	        		<h3 class="project_title">{ title }</h3>
+    	                <div class="project_skills">{ skills }</div>
+                        <div class="project_images">{ images }</div>
+                    </div>
         		</div>
 
-        		<div class="project_section" class="container">
-        			<h4>Subtitle</h4>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod molestie leo, in placerat quam. Proin a scelerisque dui, vel tincidunt sapien. Donec quis consectetur leo, a vestibulum diam. Phasellus ligula quam, vestibulum eu sapien a, fringilla euismod ante</p>
-        			<img src={imgUrl}></img>
+        		<div id="project_sections" class="container">
+                    <div class="project_section">
+                        <div class="section_text">
+                            <p>{ project.text }</p>
+                        </div>
+                    </div>
+
+                    { Sections }
         		</div>
         	</div>
         );

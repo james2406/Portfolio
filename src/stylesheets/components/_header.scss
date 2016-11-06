@@ -1,18 +1,14 @@
 .header {
     height: calc(100vh - 100px);
     @include respond-to('small') {
-        height: calc(100vh - 120px);
+        height: calc(90vh - 120px);
     }
 }
 
 .header > h4 {
-    padding: 0 20px;
     padding-top: 10vh;
     line-height: 140%;
     @include respond-to('small') {
-        padding: 0;
-        margin-right: 10%;
-        margin-left: 40%;
         padding-top: 15vh;
     }
 }

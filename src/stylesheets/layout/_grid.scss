@@ -1,7 +1,17 @@
+html {
+    background-color: #fafafa;
+}
+
 .container {
-	margin: 0 auto;
-	width: 90%;
-	@include respond-to('small') {
+    margin: 0 auto;
+    width: 90%;
+    @include respond-to('small') {
         width: 80%;
+    }
+    @include respond-to('medium') {
+        width: 70%;
+    }
+    @include respond-to('large') {
+        width: 60%;
     }
 }
