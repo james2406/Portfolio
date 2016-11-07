@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router';
 
-import Nav from "../components/layout/Nav";
 import ProjectStore from "../stores/ProjectStore";
 import Section from "../components/project/Section";
 
@@ -40,8 +39,6 @@ export default class ProjectPage extends React.Component {
 
         return (
         	<div id="project">
-                <Nav />
-
         		<div class="project_header">
                     <div class="container">
     	        		<h3 class="project_title">{ title }</h3>

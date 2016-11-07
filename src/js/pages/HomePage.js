@@ -5,11 +5,10 @@ var scroll = Scroll.animateScroll;
 
 import About from "../components/about/About";
 import Contact from "../components/contact/Contact";
-import Nav from "../components/layout/Nav";
 import Projects from "../components/home/Projects";
 
 export default class HomePage extends React.Component {
-    constructor(){
+    constructor() {
         super();
         this.state = {}
     }
@@ -21,8 +20,6 @@ export default class HomePage extends React.Component {
 
         return (
         	<div id="home">
-                <Nav />
-                
                 <About />
                 <Projects />
 

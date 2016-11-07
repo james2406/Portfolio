@@ -4,6 +4,7 @@ html {
     /* Change default typefaces here */
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: white;
 }
 
 
@@ -11,12 +12,11 @@ html {
 
 p {
     line-height: 1.5;
-    color: #333;
 }
 
 a {
     text-decoration: none;
-    color: #4078c0;
+    color: white;
 }
 
 a:hover {
@@ -44,9 +44,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    color: #333;
-}
+h6 {}
 
 h1 {
     font-size: 4rem;

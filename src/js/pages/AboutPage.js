@@ -1,7 +1,6 @@
 import React from "react";
 
 import About from "../components/about/About";
-import Nav from "../components/layout/Nav";
 
 export default class AboutPage extends React.Component {
     constructor(){
@@ -15,8 +14,6 @@ export default class AboutPage extends React.Component {
     render() {
         return (
         	<div id="about">
-                <Nav />
-                
                 <About />
         	</div>
         );

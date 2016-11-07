@@ -20,7 +20,8 @@ export default class Projects extends React.Component {
         });
 
         return (
-        	<div id="projects">
+        	<div id="projects" class="container">
+                <h2>Work</h2>
                 { ProjectComponents }
         	</div>
         );

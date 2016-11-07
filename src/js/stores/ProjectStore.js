@@ -51,7 +51,7 @@ class ProjectStore extends EventEmitter {
             }]
         }, {
             id: 2,
-            title: "Projection Mapping prototype",
+            title: "Projection Mapping",
             subtitle: "Lorem ipsum dolor sit amet",
             text: "Nullam ante tellus, laoreet ut tellus id, blandit rhoncus massa. Vestibulum finibus pretium lorem quis condimentum. Nulla tincidunt vehicula arcu vel malesuada. Mauris ipsum dui, elementum fringilla orci vel, blandit accumsan mi",
             imgUrl: ["https://think360studio.com/wp-content/uploads/2015/07/web-design-trends-predition-2016-3.png", "http://i.imgur.com/1NGWcxn.png"],
@@ -76,7 +76,7 @@ class ProjectStore extends EventEmitter {
             }]
         }, {
             id: 3,
-            title: "3D education project",
+            title: "3D Body",
             subtitle: "Lorem ipsum dolor sit amet",
             text: "Nullam ante tellus, laoreet ut tellus id, blandit rhoncus massa. Vestibulum finibus pretium lorem quis condimentum. Nulla tincidunt vehicula arcu vel malesuada. Mauris ipsum dui, elementum fringilla orci vel, blandit accumsan mi",
             imgUrl: ["http://i.imgur.com/CwRa9wj.png", "http://i.imgur.com/1NGWcxn.png"],

@@ -1,5 +1,5 @@
 .header {
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
     @include respond-to('small') {
         height: calc(90vh - 120px);
     }
@@ -12,3 +12,9 @@
         padding-top: 15vh;
     }
 }
+
+/* .header > h4 .blue_text {
+    // color: white;
+    background-color: #2962ff;
+    padding: 5px;
+} */

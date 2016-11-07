@@ -8,7 +8,10 @@ export default class Layout extends React.Component {
     render() {
         return (
         	<div>
+        		<Nav />
+
         		{this.props.children}
+        		
         		<Footer />
         	</div>
         );

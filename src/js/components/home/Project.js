@@ -12,27 +12,33 @@ export default class Project extends React.Component {
     render() {
         const id = this.props.id;
     	const title = this.props.title;
-        const text = this.props.text;
+        const subtitle = this.props.subtitle;
         const imgUrl = this.props.imgUrl[0];
     	const skills = this.props.skills.map((skill) => {
             return <p key={skill.id}>{skill.skill}</p>;
         });
 
+        // <Link to="" activeClassName="active">JAMES MORAN</Link>
+        // <button class="btn_white">View project</button>
+
         return (
-        	<div class={"project " + this.state.active}>
-                <div class="project_left container">
-                    <h2 class="project_title">{ title }</h2>
-                    <div class="project_skills">{ skills }</div>
-                    <img class="project_image" src={imgUrl}></img>
-                    <p class="project_text">{ text }</p>
-                    <Link to={ 'project/' + id }>
+            <div class={"project " + this.state.active}>
+
+                <div class="project_left">
+                    <div class="project_text">
+                        <h2>{ title }</h2>
+                        <h6>{ subtitle }</h6>
+                    </div>
+
+                    <Link to={"project/" + id} activeClassName="active">
                         <button class="btn_white">View project</button>
                     </Link>
                 </div>
+
                 <div class="project_right">
-                    <div class="project_image" style={{background: 'url("' + imgUrl + '") left top / cover'}}></div>
+                    <div class="project_image" style={{background: 'url("' + imgUrl + '")'}}></div>
                 </div>
-        	</div>
+            </div>
         );
     }
 }
