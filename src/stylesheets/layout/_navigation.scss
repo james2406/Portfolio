@@ -16,7 +16,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: none;
+    // text-decoration: none;
 }
 
 nav div.logo,
@@ -29,7 +29,7 @@ nav .navigation_links {
 
 nav div.logo {
     width: 50%;
-    p {
+    a {
         font-weight: bold;
     }
 }

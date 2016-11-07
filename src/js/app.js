@@ -14,8 +14,7 @@ ReactDOM.render(
 	<Router history={hashHistory}>
     	<Route path="/" component={ Layout }>
       		<IndexRoute component={ HomePage }></IndexRoute>
-      		<Route path="home" component={ HomePage }></Route>
-      		<Route path="project" component={ ProjectPage }></Route>
+      		<Route path="work" component={ HomePage }></Route>
       		<Route path="about" component={ AboutPage }></Route>
       		<Route path="contact" component={ ContactPage }></Route>
       		<Route path="project/:projectId" component={ ProjectPage }></Route>

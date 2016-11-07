@@ -22,11 +22,8 @@ export default class HomePage extends React.Component {
         return (
         	<div id="home">
                 <Nav />
-
-                <div class="header container">
-                    <About />
-                </div>
-
+                
+                <About />
                 <Projects />
 
                 <div class="container">

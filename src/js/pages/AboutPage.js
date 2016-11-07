@@ -16,10 +16,8 @@ export default class AboutPage extends React.Component {
         return (
         	<div id="about">
                 <Nav />
-
-                <div class="header">
-                    <About />
-                </div>
+                
+                <About />
         	</div>
         );
     }
