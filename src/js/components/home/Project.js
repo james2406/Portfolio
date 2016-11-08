@@ -24,15 +24,15 @@ export default class Project extends React.Component {
         return (
             <div class={"project " + this.state.active}>
 
-                <div class="project_left">
-                    <div class="project_text">
-                        <h2>{ title }</h2>
-                        <h6>{ subtitle }</h6>
-                    </div>
+                <div class="project_border">
+                    <div class="project_info">
+                        <div class="project_text">
+                            <h2>{ title }</h2>
+                            <h6>{ subtitle }</h6>
+                        </div>
 
-                    <Link to={"project/" + id} activeClassName="active">
-                        <button class="btn_white">View project</button>
-                    </Link>
+                        <Link to={"project/" + id} activeClassName="active">View project</Link>
+                    </div>
                 </div>
 
                 <div class="project_right">

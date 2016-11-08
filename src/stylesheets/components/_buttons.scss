@@ -2,14 +2,14 @@ button {
     cursor: pointer;
     outline: none;
     padding: 15px;
-    font-size: 0.9em;
+    background-color: transparent;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 button.btn_white {
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #2962ff;
-    color: #2962ff;
+    // border: 1px solid $accent-color;
+    color: $accent-color;
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
@@ -19,6 +19,6 @@ button.btn_white {
 }
 
 button.btn_black {
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    color: black;
+    border: 1px solid $dark-color;
+    color: $dark-color;
 }

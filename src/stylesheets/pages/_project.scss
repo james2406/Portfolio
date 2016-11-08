@@ -1,9 +1,5 @@
 #project {}
 
-#project nav {
-    background-color: #2962ff;
-}
-
 #project nav a {
     // color: white;
 }
@@ -13,8 +9,8 @@
 
 #project .project_header {
     overflow: auto;
-    background-color: #2962ff;
-    border-bottom: 1px solid #333;
+    background-color: $accent-color;
+    border-bottom: 1px solid $dark-color;
 }
 
 #project .project_header .project_title,
@@ -33,7 +29,6 @@
     p {
         color: white;
         font-size: 1.2em;
-        // font-weight: 600;
     }
 }
 
@@ -48,7 +43,6 @@
 
 #project .project_header .project_images .project_image {
     align-self: flex-end;
-    // box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 #project .project_header .project_images .project_image:nth-child(1) {
