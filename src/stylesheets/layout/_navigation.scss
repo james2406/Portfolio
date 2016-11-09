@@ -1,3 +1,5 @@
+nav {}
+
 nav .container {
     display: flex;
     flex-direction: column;
@@ -11,10 +13,8 @@ nav .container {
     }
 }
 
-nav a {}
-
-nav a:hover {
-    // text-decoration: none;
+nav a {
+    color: $dark-color;
 }
 
 nav div.logo,

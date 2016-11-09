@@ -12,42 +12,49 @@
     }
 }
 
-/* #projects h2 {
-    padding: 10px;
-    background-color: #2962ff;
-    color: white;
-} */
+#projects > h2 {
+    text-align: center;
+}
 
- #projects .project {
+#projects .project {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin: 75px 0 175px;
+    @include respond-to('small') {
+        height: 500px;
+    }
 }
+
 
 /* Border */
 
 #projects .project .project_border {
+    z-index: 1;
     position: absolute;
-    width: calc(100% - 50px);
-    height: calc(100% - 50px);
+    width: 100%;
+    height: 100%;
     padding: 25px;
-    margin: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 20px solid $accent-color;
     @include respond-to('small') {
+        z-index: 0;
         margin: 25px 0;
         width: 100%;
+        height: calc(100% - 50px);
+        background-color: transparent;
     }
 }
+
 
 /* Text */
 
 #projects .project .project_border .project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     @include respond-to('small') {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
         width: 30%;
     }
 }
@@ -61,21 +68,26 @@
 }
 
 #projects .project .project_border .project_info a {
-    color: $accent-color;
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 
 /* Image */
 
 #projects .project .project_right {
     position: absolute;
     width: 100%;
-    height: 500px;
-    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
+    height: 100%;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.3);
+    filter: grayscale(90%);
     @include respond-to('small') {
+        overflow: hidden;
         right: 7.5%;
         width: 55%;
+        height: calc(100%);
+        box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.35);
+        filter: grayscale(0);
     }
 }
 
@@ -84,26 +96,27 @@
     height: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: left top !important;
+    // background-position: left top !important;
     @include respond-to('small') {}
 }
 
+
 /* Even */
 
-#projects .project:nth-child(odd) .project_border .project_info {
+#projects .project:nth-child(even) .project_border .project_info {
     @include respond-to('small') {
         align-items: flex-end;
         margin-left: 70%;
     }
 }
 
-#projects .project:nth-child(odd) .project_border .project_info > * {
+#projects .project:nth-child(even) .project_border .project_info > * {
     @include respond-to('small') {
         text-align: right;
     }
 }
 
-#projects .project:nth-child(odd) .project_right {
+#projects .project:nth-child(even) .project_right {
     @include respond-to('small') {
         left: 7.5%;
     }

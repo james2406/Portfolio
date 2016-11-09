@@ -26,10 +26,8 @@ export default class ProjectPage extends React.Component {
 
     	const title = project.title;
         const text = project.text;
+        const image = project.imgUrl;
 
-        const images = project.imgUrl.map((imgUrl, rank) => {
-            return <img key={rank} class="project_image" src={ imgUrl }></img>;
-        });
     	const skills = project.skills.map((skill, rank) => {
             return <p key={rank}>{skill.skill}</p>;
         });
@@ -39,12 +37,9 @@ export default class ProjectPage extends React.Component {
 
         return (
         	<div id="project">
-        		<div class="project_header">
-                    <div class="container">
-    	        		<h3 class="project_title">{ title }</h3>
-    	                <div class="project_skills">{ skills }</div>
-                        <div class="project_images">{ images }</div>
-                    </div>
+        		<div class="project_header container">
+    	        	<h2 class="project_title">{ title }</h2>
+                    <div class="project_skills">{ skills }</div>
         		</div>
 
         		<div id="project_sections" class="container">

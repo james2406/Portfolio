@@ -8,7 +8,7 @@ class ProjectStore extends EventEmitter {
             title: "GoHire",
             subtitle: "Lorem ipsum dolor sit amet",
             text: "GoHire is an startup company, developing online recruitment software. Through using the GoHire applicant tracking system and online recruitment software, companies can significantly improve their hiring process.",
-            imgUrl: ["http://i.imgur.com/u62xdzy.png", "http://i.imgur.com/1NGWcxn.png"],
+            imgUrl: "http://i.imgur.com/u62xdzy.png",
             skills: [{
                 id: 1,
                 skill: "Skill 1"
@@ -54,7 +54,7 @@ class ProjectStore extends EventEmitter {
             title: "Projection Mapping",
             subtitle: "Lorem ipsum dolor sit amet",
             text: "Nullam ante tellus, laoreet ut tellus id, blandit rhoncus massa. Vestibulum finibus pretium lorem quis condimentum. Nulla tincidunt vehicula arcu vel malesuada. Mauris ipsum dui, elementum fringilla orci vel, blandit accumsan mi",
-            imgUrl: ["https://think360studio.com/wp-content/uploads/2015/07/web-design-trends-predition-2016-3.png", "http://i.imgur.com/1NGWcxn.png"],
+            imgUrl: "https://think360studio.com/wp-content/uploads/2015/07/web-design-trends-predition-2016-3.png",
             skills: [{
                 id: 1,
                 skill: "Skill 1"
@@ -79,7 +79,7 @@ class ProjectStore extends EventEmitter {
             title: "3D Body",
             subtitle: "Lorem ipsum dolor sit amet",
             text: "Nullam ante tellus, laoreet ut tellus id, blandit rhoncus massa. Vestibulum finibus pretium lorem quis condimentum. Nulla tincidunt vehicula arcu vel malesuada. Mauris ipsum dui, elementum fringilla orci vel, blandit accumsan mi",
-            imgUrl: ["http://i.imgur.com/CwRa9wj.png", "http://i.imgur.com/1NGWcxn.png"],
+            imgUrl: "http://i.imgur.com/CwRa9wj.png",
             skills: [{
                 id: 1,
                 skill: "Skill 1"

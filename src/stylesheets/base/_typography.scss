@@ -11,13 +11,18 @@ html {
 
 /* Copy & Lists */
 
+::selection {
+    color: $light-color; 
+    background: $accent-color;
+}
+
 p {
     line-height: 1.5;
 }
 
 a {
     text-decoration: none;
-    color: $dark-color;
+    color: $accent-color;
 }
 
 a:hover {

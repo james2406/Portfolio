@@ -8,9 +8,8 @@
 /* ---- Project (Page) Header ---- */
 
 #project .project_header {
-    overflow: auto;
-    background-color: $accent-color;
-    border-bottom: 1px solid $dark-color;
+    border-left: 20px solid #0084ff;
+    padding-left: 20px;
 }
 
 #project .project_header .project_title,
@@ -19,47 +18,15 @@
 }
 
 #project .project_header .project_title {
-    color: white;
-    font-weight: 300;
 }
 
 #project .project_header .project_skills {
     display: flex;
     flex-direction: row;
     p {
-        color: white;
         font-size: 1.2em;
     }
 }
-
-#project .project_header .project_images {
-    display: flex;
-    width: 100%;
-    @include respond-to('small') {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-#project .project_header .project_images .project_image {
-    align-self: flex-end;
-}
-
-#project .project_header .project_images .project_image:nth-child(1) {
-    width: 100%;
-    @include respond-to('small') {
-        width: 75%
-    }
-}
-
-#project .project_header .project_images .project_image:nth-child(2) {
-    display: none;
-    @include respond-to('small') {
-        display: block;
-        width: 20%
-    }
-}
-
 
 /* ---- Project Sections ---- */
 
@@ -77,6 +44,11 @@
     font-size: 2em;
     font-weight: 600;
     border-bottom: 1px solid #eee;
+}
+
+#project #project_sections .project_section .section_title h5 {
+    /* padding-left: 5px;
+    border-left: 5px solid #0084ff; */
 }
 
 #project #project_sections .project_section .section_text p:not(:first-child) {

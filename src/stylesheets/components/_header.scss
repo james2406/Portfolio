@@ -1,20 +1,11 @@
 .header {
-    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(90vh - 100px);
     @include respond-to('small') {
-        height: calc(100vh - 120px);
+        height: calc(50vh - 120px);
     }
 }
 
-.header > h4 {
-    padding-top: 10vh;
-    line-height: 140%;
-    @include respond-to('small') {
-        padding-top: 15vh;
-    }
-}
-
-/* .header > h4 .blue_text {
-    // color: white;
-    background-color: #2962ff;
-    padding: 5px;
-} */
+.header > h4 {}

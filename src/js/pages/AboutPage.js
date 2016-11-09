@@ -1,7 +1,5 @@
 import React from "react";
 
-import About from "../components/about/About";
-
 export default class AboutPage extends React.Component {
     constructor(){
         super();
@@ -13,8 +11,9 @@ export default class AboutPage extends React.Component {
 
     render() {
         return (
-        	<div id="about">
-                <About />
+        	<div id="about" class="container">
+                <h1>About</h1>
+                <div class=""></div>
         	</div>
         );
     }

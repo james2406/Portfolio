@@ -13,7 +13,6 @@ export default class ContactPage extends React.Component {
         return (
         	<div id="contact" class="container">
         		<h1>Contact</h1>
-
                 <div class=""></div>
         	</div>
         );

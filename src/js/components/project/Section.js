@@ -16,8 +16,12 @@ export default class Section extends React.Component {
 
         return (
         	<div class="project_section">
-        		<h5 class="section_title">{ title }</h5>
-        		<div class="section_text">{ text }</div>
+                <div class="section_title">
+                    <h5>{ title }</h5>
+                </div>
+        		<div class="section_text">
+                    { text }
+                </div>
         		<img class="section_image" src={ imgUrl }></img>
         	</div>
         );

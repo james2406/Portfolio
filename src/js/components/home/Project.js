@@ -6,6 +6,7 @@ export default class Project extends React.Component {
         super();
         this.state = {
             active: "",
+            mouseX: 0,
         };
     }
 
@@ -13,13 +14,17 @@ export default class Project extends React.Component {
         const id = this.props.id;
     	const title = this.props.title;
         const subtitle = this.props.subtitle;
-        const imgUrl = this.props.imgUrl[0];
+        const imgUrl = this.props.imgUrl;
     	const skills = this.props.skills.map((skill) => {
             return <p key={skill.id}>{skill.skill}</p>;
         });
 
-        // <Link to="" activeClassName="active">JAMES MORAN</Link>
-        // <button class="btn_white">View project</button>
+        // function map_range(value, low1, high1, low2, high2) {
+        //     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+        // }
+        // onmousemove = event => { 
+        //     this.setState({mouseX: map_range(event.clientX, 0, document.body.clientWidth, 0, 100)});
+        // }
 
         return (
             <div class={"project " + this.state.active}>
@@ -36,7 +41,7 @@ export default class Project extends React.Component {
                 </div>
 
                 <div class="project_right">
-                    <div class="project_image" style={{background: 'url("' + imgUrl + '")'}}></div>
+                    <div class="project_image" style={{background: 'url("' + imgUrl + '")', backgroundPosition: this.state.mouseX + '% top'}}></div>
                 </div>
             </div>
         );
